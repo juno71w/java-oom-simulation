@@ -21,7 +21,7 @@ public class PhotoCacheOomController {
 
         byte[] photo = new byte[ONE_HUNDRED_MB];
         RANDOM.nextBytes(photo);
-        myCache.put(id, photo);
+        myCache.wrongPut(id, photo);
 
         return "캐시에 저장 성공!!";
     }
